@@ -1,3 +1,4 @@
+
 #webnav{
   position: fixed;
   z-index: 10;
@@ -21,7 +22,7 @@ li {
      visibility: hidden;
      opacity: 0;
      position: absolute;
-     transition: all 0.5s ease;
+     transition: all 1.5s ease;
      margin-top: 1rem;
      left: 0;
      display: none;
@@ -32,9 +33,11 @@ li {
      visibility: visible;
      opacity: 1;
      display: block;
+     transition:2.5s;
    }
    
    ul li ul li {
+    transition: 4.5s;
      clear: both;
      width: 100%;
    }
@@ -47,6 +50,7 @@ li {
     margin-left: 450px;
    }
    .drop1{
+    transition: 4.5s;
     cursor: auto;
     padding-top: 30px;
     background-color: white;
@@ -55,20 +59,28 @@ li {
     margin-left: 400px; 
    }
    .aboutI{
-    top:-250px;
+    top:-220px;
     position: relative;
-    margin-left: 400px;
+    margin-left: 300px;
    }
    .AboutL{
+    font-size: small;
     color: black;
    }
-   
    .Aboutdivider{
+    position: relative;
+    top:-430px;
+    margin-left:600px;
+    height: 300px;
+    width:4px;
+    background-color: gold;
+   }
+   .learndivider{
     position: relative;
     top:-450px;
     margin-left:700px;
     height: 300px;
-    width:2px;
+    width:4px;
     background-color: gold;
    }
    .about{
@@ -78,11 +90,17 @@ li {
     color: black;
     text-decoration: none;
    }
-   .AboutLinks{
-    position: relative;
-    left: 20px;
-     width:100px;
-    width:100%;
+   .about-links{
+ margin-left: 20px;
+   }
+   .a-links{
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color:black;
+   }
+   .a-links:hover{
+    color:brown;
    }
    .Nlinks{
     color:white;
@@ -96,12 +114,10 @@ li {
     padding-top: 30px;
     background-color: white;
     height:350px;
-    border: 0.1px solid black;
-    margin-left: 400px; 
+    border: 0.1px solid black; 
    }
    .learnbox{
-    margin-top: -270px;
-    margin-left: 410px;
+    margin-top: -250px;
    }
    .learnInfo{
     color:black;
@@ -109,7 +125,7 @@ li {
    .learnlinks{
     position: relative;
     top:-750px;
-    margin-left:750px;
+    left:10px;
     text-decoration: none;
     font-size: 15px;
     color:black;
@@ -129,15 +145,13 @@ li {
     padding-top: 30px;
     background-color: white;
     height:350px;
-    border: 0.1px solid black;
-    margin-left: 400px; 
+    border: 0.1px solid black; 
    }
    .gallerypic{
     height:250px;
    }
    .Galleryinfo{
     margin-top: -250px;
-   margin-left: 400px;
    }
    .galleryi{
     color:black;
@@ -147,11 +161,9 @@ li {
     background-color: gold;
     width:2px;
     margin-top: -130px;
-    margin-left:320px;
    }
    .galleryB{
     margin-top: -280px;
-    margin-left: 340px;
    }
    .schoolS{
     margin-bottom:20px;
@@ -172,7 +184,9 @@ li {
     text-decoration: underline;
    }
    #mobilenav{
-    margin-bottom: 20px;
+    z-index:10;
+    position: fixed;
+    margin-bottom: 50px;
     height:70px;
     background-color: rgb(46, 46, 95);
    }
@@ -182,12 +196,12 @@ li {
     width:40%;
 }
 .Mdivider{
+  margin-left: 300px;
   height:50px;
   background-color: white;
   width:2px;
   position: relative;
   top:-60px;
-  margin-left:300px;
 }
 .sidenav {
   height: 100%;
@@ -220,7 +234,6 @@ li {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
 }
 .snav{
   margin-left: 320px;
@@ -261,12 +274,20 @@ li {
   color:rgb(187, 65, 65);
 }
 .Contact-boxes{
-  float: right;
-  height:200px;
+  right:0;
+  top:20%;
+  position: fixed;
+  z-index: 6;
+  float: right !important;
+  /* height:200px; */
   display: block;
 }
 .C-boxes{
-  width:100%;
+  border-radius: 2%;
+  font-size: small;
+  margin-bottom: 2px;
+  border:transparent;
+  width:80px;
   display:block;
   height:80px;
   background-color: rgb(114, 0, 0);
@@ -283,7 +304,6 @@ li {
 .welcome-text{
   position: relative;
   left:20px;
-  margin-left: 550px;
   margin-top: -350px;
   color: black;
 }
@@ -296,14 +316,12 @@ li {
   margin-bottom: 70px;
 }
 .welcome-line{
-  margin-left: -100px;
   z-index: 10;
   width: 100%;
   height:2px;
   background-color: gold;
 }
 .read-more{
-  margin-left: 400px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -313,7 +331,7 @@ li {
 .discover{
   padding-top: 20px;
   margin-top: 100px;
-  height:400px;
+  height:550px;
   background-color: rgb(46, 46, 95);
 }
 .discover-text{
@@ -324,7 +342,67 @@ li {
   height: 2px;
   background-color: grey;
 }
-
+#eyfspic{
+ height: 300px;
+}
+#primarySpic{
+  height: 300px;
+}
+.sing{
+  height:300px;
+}
+.science{
+  height:300px;
+}
+.exploreline{
+  margin-bottom: 20px;
+  height:2px;
+  background-color: #818181;
+}
+.explore{
+  background-color: rgb(248,246,246);
+}
+.college{
+  background-size: cover;
+}
+.join{
+  margin-bottom: 70px;
+  padding-top: 40px;
+  height:500px;
+  margin-top: 100px;
+}
+.footer-line{
+  margin-bottom: 20px;
+  height:2px;
+  background-color: white;
+}
+.inquireB{ 
+  transition:1.4s;
+  color:white;
+  border-radius: 5px;
+  height:60px;
+  background: transparent;
+  border: solid white 4px;
+}
+.inquireB:hover{
+  border:none;
+ background: darkred;
+ font-weight: 700;
+}
+footer{
+  background-color: rgb(46, 46, 95);
+  height:500px;
+  color:white;
+  padding-top: 40px;
+}
+.update{
+  font-family: cursive;
+ margin-left: 20px; 
+}
+.submit{
+  height:40px;
+  border: none;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -334,49 +412,133 @@ li {
       display:none;
     }
     #mobilenav{
+      top:0;
       display: block;
     }
     .welcome-text{
-      position: relative;
-      top:500px;
-      margin-left:-300px;
+      overflow: hidden;
+      margin-top:500px;
+    }
+    .welcome-textInside{
+    font-size: medium;
     }
     .welcomepic{
       width:100%;
     }
-    .slideshowcontainer{ 
-      position: relative;
-      margin-bottom:-200px;
+    .slideshowcontainer{
+      height:100%;
     }
-    .slideshow-container{
+    .slideshowcontainer{
+      margin-top: 120px;
+      top:-70px;
       position: relative;
       display:block;
     }
     .welcome-textInside{
       width:100%;
     }
-    .discover{
-      margin-top: 600px;
-    }
     .C-boxes{
       display:block;
       height:50px;
       background-color: rgb(114, 0, 0);
       color:white;
-    }
+    } 
+  .discover{
+    height:1800px;
+  }
+  .welcomepic{
+    margin-bottom: -500px;
    }
+   .community{
+    margin: auto;
+   }
+   .explore{
+    margin-bottom: 100px;
+    margin-top: -200px;
+    height:700px;
+   }
+   .learningB{
+    margin-bottom: 30px;
+   }
+   .Athletics{
+    margin-bottom: 30px;
+   }
+   .competition{
+    background-size: cover;
+    width:100%;
+    margin-bottom: 30px;
+   }
+  }
   @media screen and (min-width:1030px) and (max-width:1366px){
    #mobilenav{
     display: none;
    }
    .C-boxes{
-    width:100px;
+    border-radius: 2%;
+    font-size: small;
+   width:60px;
     display:block;
-    height:80px;
-    background-color: rgb(114, 0, 0);
+    height:60px;
+    background-color: rgb(170, 0, 0);
     color:white;
   }
   .welcomepic{
     width:90%;
   }
+  .discover{
+    position: relative;
+    top: -500px;
   }
+  .primaryschool{
+    margin-left: 380px;
+    margin-top: -415px;
+    position: relative;
+  }
+.discover{
+  margin-bottom: 10px;
+    margin-top: 600px;
+  } 
+.highschoolday{
+  position:relative;
+margin-left: 730px;
+margin-top: -415px;
+}
+.highschoolboarding{
+  position: relative;
+  right:-50px;
+  margin-top: -415px;
+  margin-left:1010px;
+}
+.science{
+  width:250px;
+}
+.learningB{
+  margin-left: 20px;
+}
+.Athletics{
+  margin-bottom: 20px;
+  margin-top: -300px;
+  margin-left:940px !important;
+}
+.competition{
+  margin-top: 40px;
+  margin-left:20px;
+  width:48%;
+}
+.explore{
+  height:500px;
+  margin-top: -240px;
+}
+.college{
+  margin-left:700px;
+  margin-top: -460px;
+}
+.innovation{
+  margin-left:680px;
+  margin-top: 10px;
+}
+.charity{
+  margin-left:1030px;
+  margin-top: -250px;
+}
+}
