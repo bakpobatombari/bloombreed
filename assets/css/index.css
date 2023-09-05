@@ -376,7 +376,7 @@ li {
   height:2px;
   background-color: white;
 }
-.inquireB{ 
+.inquireB1{ 
   transition:1.4s;
   color:white;
   border-radius: 5px;
@@ -384,7 +384,35 @@ li {
   background: transparent;
   border: solid white 4px;
 }
-.inquireB:hover{
+.inquireB1:hover{
+  border:none;
+ background: darkred;
+ font-weight: 700;
+}
+
+.inquireB2{ 
+  transition:1.4s;
+  color:white;
+  border-radius: 5px;
+  height:60px;
+  background: transparent;
+  border: solid white 4px;
+}
+.inquireB2:hover{
+  border:none;
+ background: darkred;
+ font-weight: 700;
+}
+
+.inquireB3{ 
+  transition:1.4s;
+  color:white;
+  border-radius: 5px;
+  height:60px;
+  background: transparent;
+  border: solid white 4px;
+}
+.inquire3:hover{
   border:none;
  background: darkred;
  font-weight: 700;
@@ -402,6 +430,20 @@ footer{
 .submit{
   height:40px;
   border: none;
+}
+.footerline{
+  height:400px;
+  width: 0.1svh;
+  background-color:rgba(255, 255, 255, 0.329);
+}
+
+.footerline1{
+  height:400px;
+  width: 0.1svh;
+  background-color:rgba(255, 255, 255, 0.329);
+}
+.f-logo{
+  height:150px;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -468,6 +510,56 @@ footer{
     width:100%;
     margin-bottom: 30px;
    }
+   .college{
+    width:100%;
+    margin-bottom: 30px;
+   }
+   .innovation{
+    margin-bottom: 30px;
+    width:100%;
+   }
+   .inquireB1{ 
+    transition:1.4s;
+    color:white;
+    border-radius: 5px;
+    height:60px;
+    background: transparent;
+    border: solid white 4px;
+  }
+  .inquireB1:hover{
+    border:none;
+   background: darkred;
+   font-weight: 700;
+  }
+  
+  .inquireB2{ 
+    transition:1.4s;
+    color:white;
+    border-radius: 5px;
+    height:60px;
+    background: transparent;
+    border: solid white 4px;
+  }
+  .inquireB2:hover{
+    border:none;
+   background: darkred;
+   font-weight: 700;
+  }
+  
+  .inquireB3{ 
+    transition:1.4s;
+    color:white;
+    border-radius: 5px;
+    height:60px;
+    margin: 0;
+    background: transparent;
+    border: solid white 4px;
+  }
+  .inquire3:hover{
+    border:none;
+   background: darkred;
+   font-weight: 700;
+  }
   }
   @media screen and (min-width:1030px) and (max-width:1366px){
    #mobilenav{
@@ -530,6 +622,7 @@ margin-top: -415px;
   margin-top: -240px;
 }
 .college{
+  width:650px;
   margin-left:700px;
   margin-top: -460px;
 }
@@ -540,5 +633,50 @@ margin-top: -415px;
 .charity{
   margin-left:1030px;
   margin-top: -250px;
+  width:320px;
 }
+}
+footer{
+  background-color: rgb(36, 36, 92);
+  height:500px;
+  color:white;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.update-input{
+  height:50px;
+}
+.footline{
+  width:1px;
+  height:350px;
+  background-color: white;
+}
+.a{
+  text-decoration: none;
+}
+.a:hover{
+  text-decoration: underline;
+}
+@media screen 
+and (min-width:320px)
+and (max-width:480px){
+  .update-input{
+      width:70%;
+  }
+  .btn{
+      width:30% 
+  }
+  .footline{
+      display: none;
+  }
+  .footerabout{
+      z-index: 10;
+      margin-left: -400px;
+  }
+  footer{
+      height:600px;
+  }
+  .flogo{
+      height:70px;
+  }
 }
