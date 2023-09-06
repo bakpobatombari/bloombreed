@@ -310,6 +310,9 @@
     background-color: goldenrod;
     height:2px;
   }
+  .homepage{
+    height:600px;
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -370,7 +373,7 @@
 }
 .inquire:hover{
   transition: 0.4s;
-  font-weight: 500;
+  font-weight: 700;
   color:white;
   background-color: darkred;
 }
@@ -405,6 +408,22 @@ and (max-width:480px){
     .update-input{
         width:70%;
     }
+    .joinUs{
+      width:100%;
+    }
+    .connectedimg{
+      width:100%;
+    }
+    .kitchen{
+      width: 100%;
+    }
+    .innov{
+      width:100%;
+    }
+    .homepage{
+      background-size: cover;
+      height:300px;
+    }
     .btn{
         width:30% 
     }
@@ -420,5 +439,8 @@ and (max-width:480px){
     }
     .flogo{
         height:70px;
+    }
+    .sidelinks{
+      display: none;
     }
 }
