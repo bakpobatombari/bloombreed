@@ -398,21 +398,27 @@
   color:white;
 }
 .foooter-line{
-  margin-top: 80px;
+  margin-top: 30px;
   height:1px;
   background-color: white;
 }
 @media screen 
 and (min-width:320px)
 and (max-width:480px){
-    .update-input{
+    #email{
         width:70%;
+    }
+    #submit{
+      width:30%;
     }
     .joinUs{
       width:100%;
     }
     .connectedimg{
       width:100%;
+    }
+    .webfooter{
+    height:700px;
     }
     .kitchen{
       width: 100%;
@@ -424,23 +430,29 @@ and (max-width:480px){
       background-size: cover;
       height:300px;
     }
-    .btn{
-        width:30% 
-    }
     .footline{
         display: none;
+    }
+    .useful-one{
+      display: flex;
     }
     .footerabout{
         z-index: 10;
         margin-left: -400px;
-    }
-    footer{
-        height:600px;
     }
     .flogo{
         height:70px;
     }
     .sidelinks{
       display: none;
+    }
+    .useful-one>p{
+      margin-left: 8px;
+    }
+    .useful-two{
+      display: none;
+    }
+    .educare{
+      margin-top: -100px;
     }
 }
