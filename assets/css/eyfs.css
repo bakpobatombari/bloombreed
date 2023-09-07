@@ -347,7 +347,13 @@
   }
   .underline{
     background-color: goldenrod;
-    height:2px;
+    height:1px;
+  }
+  #fomm{
+    width:70%;
+  }
+  #fom{
+    width:30%;
   }
   .homepage{
     height:600px;
