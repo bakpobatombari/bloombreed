@@ -349,6 +349,19 @@
     background-color: goldenrod;
     height:1px;
   }
+  #apply{
+    font-family: sans-serif;
+    color:red;
+    height:70px;
+    background-color: white;
+    border: 2px darkred solid;
+  }
+  #apply:hover{
+    font-weight:500;
+    transition: 0.5s;
+    color:white;
+    background-color: darkred;
+  }
   #fomm{
     width:70%;
   }
