@@ -1,0 +1,517 @@
+#webnav{
+    position: fixed;
+    z-index: 10;
+    margin-bottom: 30px;
+      padding-top: 10px;
+    background-color:rgb(46, 46, 95);   
+    height:70px;
+  }
+  .logo{
+    display:block;
+    z-index: 10;
+      background-color: rgb(46, 46, 95);
+      height:110px;
+  }
+  li {
+      display: block;
+      transition-duration: 1.5s;
+     }
+      
+     ul li ul {
+       visibility: hidden;
+       opacity: 0;
+       position: absolute;
+       transition: all 0.5s ease;
+       margin-top: 1rem;
+       left: 0;
+       display: none;
+     }
+     
+     ul li:hover > ul,
+     ul li ul:hover {
+       visibility: visible;
+       opacity: 1;
+       display: block;
+     }
+     
+     ul li ul li {
+       clear: both;
+       width: 100%;
+     }
+     .navitems{
+      font-weight: 300;
+      font-size: small;
+      display:flex;
+      margin-top: -90px;
+      color:white;
+      margin-left: 450px;
+     }
+     .drop1{
+      cursor: auto;
+      padding-top: 30px;
+      background-color: white;
+      height:350px;
+      border: 0.1px solid black;
+      margin-left: 400px; 
+     }
+     .aboutI{
+      top:-220px;
+      position: relative;
+      margin-left: 300px;
+     }
+     .AboutL{
+      font-size: small;
+      color: black;
+     }
+     .Aboutdivider{
+      position: relative;
+      top:-430px;
+      margin-left:600px;
+      height: 300px;
+      width:4px;
+      background-color: gold;
+     }
+     .learndivider{
+      position: relative;
+      top:-450px;
+      margin-left:700px;
+      height: 300px;
+      width:4px;
+      background-color: gold;
+     }
+     .about{
+      margin-bottom: 20px;;
+      position: relative;
+      font-size: small;
+      color: black;
+      text-decoration: none;
+     }
+     .about-links{
+   margin-left: 20px;
+     }
+     .a-links{
+      font-size: 15px;
+      font-weight: 300;
+      text-decoration: none;
+      color:black;
+     }
+     .a-links:hover{
+      color:brown;
+     }
+     .Nlinks{
+      color:white;
+      font-weight: 400;
+     }
+     .about:hover{
+      color:brown;
+     }
+     .drop2{
+     transition:2.0s;
+      cursor:auto;
+      padding-top: 30px;
+      background-color: white;
+      height:350px;
+      border: 0.1px solid black; 
+     }
+     .learnbox{
+      margin-top: -250px;
+     }
+     .learnInfo{
+      color:black;
+     }
+     .learnlinks{
+      position: relative;
+      top:-750px;
+      left:10px;
+      text-decoration: none;
+      font-size: 15px;
+      color:black;
+      display: block;
+     }
+     .Learn{
+      margin-bottom: 20px;
+      color:black;
+      text-decoration: none;
+      display: block;
+     }
+     .Learn:hover{
+      color:brown;
+     }
+     .drop3{
+      cursor:auto;
+      padding-top: 30px;
+      background-color: white;
+      height:350px;
+      border: 0.1px solid black; 
+     }
+     .gallerypic{
+      height:250px;
+     }
+     .Galleryinfo{
+      margin-top: -250px;
+     }
+     .galleryi{
+      color:black;
+     }
+     .Gdivider{
+      height: 300px;
+      background-color: gold;
+      width:2px;
+      margin-top: -130px;
+     }
+     .galleryB{
+      margin-top: -280px;
+     }
+     .schoolS{
+      margin-bottom:20px;
+      color: black;
+      display: block;
+      text-decoration: none;
+     }
+     .schoolS:hover{
+       color:brown;
+     }
+     .portal{
+      border:1px solid black;
+      background: red;
+      height:30px;
+      border-radius: 2px;
+     }
+     .portal:hover{
+      text-decoration: underline;
+     }
+     #mobilenav{
+      z-index:10;
+      position: fixed;
+      margin-bottom: 50px;
+      height:70px;
+      background-color: rgb(46, 46, 95);
+     }
+     .logoM{
+      background-color: rgb(46, 46, 95);
+      height:68px;
+      width:40%;
+  }
+  .Mdivider{
+    margin-left: 300px;
+    height:50px;
+    background-color: white;
+    width:2px;
+    position: relative;
+    top:-60px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 46, 95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .snav{
+    margin-left: 320px;
+    color: white;
+    position:relative;
+    top:-100px;
+  }
+  .slideshowcontainer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 140px;
+  }.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }.slide:first-child {
+    display: block;
+  }.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+  .buttonN:hover{
+    color:rgb(187, 65, 65);
+  }
+  .C-boxes{
+    display:block;
+    height:50px;
+    background-color: rgb(114, 0, 0);
+    color:white;
+  } 
+  .Contact-boxes{
+    right:0;
+    top:20%;
+    position: fixed;
+    z-index: 6;
+    float: right !important;
+    /* height:200px; */
+    display: block;
+  }
+  .C-boxes{
+    border-radius: 2%;
+    font-size: small;
+    margin-bottom: 2px;
+    border:transparent;
+    width:60px;
+    display:block;
+    height:80px;
+    background-color: rgb(114, 0, 0);
+    color:white;
+  }
+  .sidelinks{
+    text-transform: uppercase;
+    height:400px;
+    background-color: #e6e6e69f;
+    margin-left: 20px;
+  }
+  .side-divider{
+    height:2px;
+    background-color:rgba(112, 128, 144, 0.39);
+  }
+  .underline{
+    background-color: goldenrod;
+    height:2px;
+  }
+  .homepage{
+    height:600px;
+  }
+  .side-line{
+    height:2px;
+    background-color: black;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+     @media only screen and (min-width:320px) and (max-width:480px){
+      #webnav {
+        display:none;
+      }
+      #mobilenav{
+        top:0;
+        display: block;
+    }
+ }
+    @media screen and (min-width:1030px) and (max-width:1366px){
+     #mobilenav{
+      display: none;
+     }
+  }
+  footer{
+    background-color: rgb(36, 36, 92);
+    height:500px;
+    color:white;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.update-input{
+    height:50px;
+}
+.apply{
+    height:70px;
+    background-color: white;
+    border: solid 2px darkred;
+    border-radius: 2px;
+}
+.apply:hover{
+    background-color: darkred;
+    transition: 0.5s;
+    color:white;
+    font-weight: 900;
+}
+.footline{
+    width:1px;
+    height:350px;
+    background-color: white;
+}
+.a{
+    text-decoration: none;
+}
+.a:hover{
+    text-decoration: underline;
+}
+.joinline{
+  height:2px;
+  background-color: white;
+}
+.inquire{
+  color:white;
+  height: 60px;
+  border-radius: 5px;
+  background: transparent;
+  border: #f1f1f1 3px solid;
+}
+.sidelinks-a{
+  color: black;
+  text-decoration: none;
+}
+.sidelinks-a:hover{
+  color:brown;
+  text-decoration: none;
+}
+.inquire:hover{
+  transition: 0.4s;
+  font-weight: 700;
+  color:white;
+  background-color: darkred;
+}
+.Contact-boxes{
+  right:0;
+  top:30%;
+  position: fixed;
+  z-index: 6;
+  float: right !important;
+  /* height:200px; */
+  display: block;
+}
+.C-boxes{
+  border-radius: 2%;
+  font-size: small;
+  margin-bottom: 2px;
+  border:transparent;
+  width:56px;
+  display:block;
+  height:80px;
+  background-color: rgb(114, 0, 0);
+  color:white;
+}
+.foooter-line{
+  margin-top: 30px;
+  height:1px;
+  background-color: white;
+}
+.line-footer{
+  background-color: white;
+  width:1px;
+}
+@media screen 
+and (min-width:320px)
+and (max-width:480px){
+    #email{
+        width:70%;
+    }
+    #submit{
+      width:30%;
+    }
+    .joinUs{
+      width:100%;
+    }
+    .connectedimg{
+      width:100%;
+    }
+    .webfooter{
+    height:700px;
+    }
+    .kitchen{
+      width: 100%;
+    }
+    .innov{
+      width:100%;
+    }
+    .homepage{
+      background-size: cover;
+      height:300px;
+    }
+    .footline{
+        display: none;
+    }
+    .useful-one{
+      display: flex;
+    }
+    .footerabout{
+        z-index: 10;
+        margin-left: -400px;
+    }
+    .flogo{
+        height:70px;
+    }
+    .sidelinks{
+      display: none;
+    }
+    .useful-one>p{
+      margin-left: 8px;
+    }
+    .useful-two{
+      display: none;
+    }
+    .educare{
+      margin-top: -100px;
+    }
+}
