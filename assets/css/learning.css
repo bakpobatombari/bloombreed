@@ -378,6 +378,7 @@
         display:none;
       }
       #mobilenav{
+        overflow-y: hidden;
         top:0;
         display: block;
     }
