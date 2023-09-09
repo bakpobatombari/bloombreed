@@ -356,6 +356,19 @@
     height:2px;
     background-color: black;
   }
+  .apply{
+    height:70px;
+    background-color: white;
+    border: solid 2px darkred;
+    border-radius: 2px;
+}
+.apply:hover{
+    background-color: darkred;
+    transition: 0.5s;
+    color:white;
+    font-weight: 900;
+}
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -367,6 +380,9 @@
       #mobilenav{
         top:0;
         display: block;
+    }
+    *{
+      overflow-x: hidden;
     }
  }
     @media screen and (min-width:1030px) and (max-width:1366px){
