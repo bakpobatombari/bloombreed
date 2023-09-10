@@ -263,11 +263,41 @@ li {
   color: white;
   font-weight: bold;
   font-size: 24px;
-  transition: 0.6s ease;
+  transition: 0.10s;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 }.next {
   right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prevo{
+  right: 20%;
+}
+body{
+  overflow-x: hidden;
+}
+.r-link{
+  text-decoration: none;
+  color:white;
+}
+.r-link:hover{
+  color: white;
+  text-decoration: underline;
+}
+.prevO, .nextO {
+  position: absolute;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: 20px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}.nextO {
+  right: 20%;
   border-radius: 3px 0 0 3px;
 }
 .buttonN:hover{
