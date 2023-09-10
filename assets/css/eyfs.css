@@ -217,7 +217,7 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -285,7 +285,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: navy;
+    background-color: rgb(46, 46, 95);
    width: 230px;
    color:white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -299,9 +299,10 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 12px;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {color:brown;}
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -388,6 +389,7 @@
   }
   .side-line{
     height:2px;
+    margin-bottom: 10px;
     background-color: black;
   }
   .useful{
@@ -545,5 +547,9 @@ and (max-width:480px){
     }
     .educare{
       margin-top: -100px;
+    }
+    .inquire{
+      width:100%;
+      margin-bottom: 10px;
     }
 }

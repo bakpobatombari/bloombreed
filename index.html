@@ -6,6 +6,7 @@
         <meta name="description" content="description">
         <link href="assets/css/index.css" rel="stylesheet">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/eyfs.css" rel="stylesheet">
         <link type="image/x-icon" rel="icon" href="assets/images/bs-logo-png.png">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin='anonymous'></script>
         <title>Bloombreed School</title>
@@ -72,18 +73,54 @@
         </ul>
     </nav>
     <nav id="mobilenav" class="col-md-12" style="width:100%;">
-        <img src="assets/images/logored.png" class="col-md-3 logoM" alt="logo" width="100%"/>
-        <i class='fas fa-search' style="font-size:36px;  color:white;"></i>
-        <div class="Mdivider offset-md-11"></div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div> 
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="snav offset-md-11">&#9776;</span>          
-    </nav>
+      <img src="assets/images/logored.png" class="col-md-3 logoM" alt="logo" width="100%"/>
+      <i class='fas fa-search' style="font-size:36px;  color:white;"></i>
+      <div class="Mdivider offset-md-11"></div>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="dropdown">
+            <button class="dropbtn" style="margin-left: 20px;">ABOUT</button>
+            <div class="dropdown-content">
+            <a href="about.html">About</a>
+            <a href="principalboarding.html">Principal's (Boarding) Welcome address</a>
+            <a href="principalday.html">Principal's (Day) Welcome address</a>
+            <a href="history.html">Our History</a>
+            <a href="ourmission.html">Our mission & vission</a>
+            <a href="leadership.html">Leadership</a>
+            </div>
+          </div>
+          <div class="side-line col-md-3"></div>
+          <a href="#">Admission</a>
+          <div class="side-line col-md-3"></div>
+          <div class="dropdown">
+            <button class="dropbtn" style="margin-left: 20px;">LEARNING</button>
+            <div class="dropdown-content">
+            <a href="learning.html">Learning</a>
+            <a href="eyfs.html">Nursery</a>
+            <a href="primaryschool.html">Primary</a>
+            <a href="highschoolD.html">Highschool (Day)</a>
+            <a href="highschoolB.html">Highschool (Boarding)</a>
+            <a href="innovation.html">Innovation Innitiative</a>
+            </div>
+          </div>
+          <div class="side-line col-md-3"></div>
+          <a href="#">Student Life</a>
+          <div class="side-line col-md-3"></div>
+          <a href="#">CHILDREN PROTECTION</a>
+          <div class="side-line col-md-3"></div>
+          <div class="dropdown">
+            <button class="dropbtn" style="margin-left: 20px;">GALLERY</button>
+            <div class="dropdown-content">
+            <a href="gallery1.html">DAY school</a>
+            <a href="boarding.html">Boarding school</a>
+            </div>
+          </div>
+          <div class="side-line col-md-3"></div>
+          <a href="#">NEWS AND EVENTS</a>
+          <div class="side-line col-md-3"></div>
+        </div> 
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="snav offset-md-11">&#9776;</span>          
+  </nav>
     <div class="slideshowcontainer col-xs-12">
         <div class="slide col-md-12" style="margin-top:-20px;">
           <img src="assets/images/landing1.png" class="col-md-12" alt="Image 1" style="width:100%">
@@ -207,16 +244,17 @@
               <form action="index.html" method="post">
                 <div class="row">
               <h6><em>LET'S KEEP YOU UP TO DATE <br>WITH OUR LATEST NEWS.</em></h6>
-              <input class="update-input col-md-6" placeholder="Your Email Here" type="email" required><button class="btn btn-danger col-md-3" type="submit">Submit</button>
+              <input class="update-input col-md-6" placeholder="Your Email Here" type="email" id="fomm" required>
+              <button class="btn btn-danger col-md-3" type="submit" id="fom">Submit</button>
             </div>
             </form>
             </div>
-            <div class="footline" style="width:1px"></div>
+            
             <div class="footer-about col-md-5">
             <img src="assets/images/logored.png" class="col-md-7 flogo offset-md-2" style="margin-bottom: 40px;">
             <div class="row">
             <div class="boarding-s col-md-6">
-            <h6>BOARDING SCHOOL</h6>
+            <h6>BOARDING SCHOOL</h6> 
             <h6 style="font-weight: 300;">Baskel Road, Off Port harcourt /Aba Expressway, After Eleme Junction Port Harcourt</h6>
             <p>Tel: +234 703 904 7680 Email: info@bloombredschools.com</p>
           </div>
@@ -226,8 +264,7 @@
             <p>Tel: +234 703 904 7680 Email: info@bloombredschools.com</p>
           </div>
         </div>
-      </div>
-            <div class="footline" style="width:1px"></div>
+      </div> 
             <div class="useful col-md-2">
             <h6 style="margin-bottom: 50px;">USEFUL LINKS</h6>
             <div class="row">
@@ -248,7 +285,7 @@
           </div>
           </div>
         </div>
-      </footer>
-    <script src="assets/js/bootstrap.min.js"></script>
+      </footer>    
+      <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
