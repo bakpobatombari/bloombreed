@@ -285,14 +285,17 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: navy;
+   width: 230px;
+   color:white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
+    color: white;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -387,6 +390,9 @@
     height:2px;
     background-color: black;
   }
+  .useful{
+    border-left: solid 1px white;
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -480,11 +486,18 @@
   background-color: white;
   width:1px;
 }
+.footer-about{
+  margin-left: 20px;
+  border-left: solid 1px white;
+}
 @media screen 
 and (min-width:320px)
 and (max-width:480px){
     #email{
         width:70%;
+    }
+    .footer-about{
+      margin: 0;
     }
     #submit{
       width:30%;
