@@ -374,6 +374,17 @@
   width: 200px;
   transition: 0.5ms;
 }
+.imgT{
+  height:300px;
+}
+body{
+  overflow-y: visible;
+}
+.imgT:hover{
+  height:60%;
+  width: 95%;
+  transition: 0ms;
+}
 .staff:hover{
   transition: 0.5ms;
   height: 82%;
