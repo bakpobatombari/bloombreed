@@ -87,10 +87,29 @@ canvas{
 
 #particles-js{
   width: 100%;
-  height: 100%;
+  height: 160%;
+  background-position-y: fixed;
   background-color: #b61924;
+  animation-name: partbackground;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
   background-image: url('');
+  background: fixed;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+@keyframes partbackground{
+  0%{
+    background: radial-gradient(circle, white, navy);
+  }
+  50%{
+    background: radial-gradient(circle, white, black);
+  }
+  80%{
+    background: radial-gradient(circle, white, #b61924);
+  }
+  100%{
+    background: radial-gradient(circle, white, navy);
+  }
 }

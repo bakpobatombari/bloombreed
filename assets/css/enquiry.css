@@ -1,0 +1,30 @@
+.container{
+top:4%;
+position: absolute;
+z-index:10;
+}
+form{
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.432);
+    height:790px;
+    text-align: justify;
+    padding-left: 10px;
+}
+.submit{
+    margin-top: 20px;
+    background-color: #d46168;
+    border: none;
+    border-radius: 7%;
+    height:35px;
+    margin-left:30%;
+    box-shadow: 0.1vw 0.1vw 1vw 1vw black;
+}
+input{
+    height:35px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    form img{
+        width:20%;
+    }
+}

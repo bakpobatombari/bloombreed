@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Enquiry</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,">
   <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="assets/css/enquiry.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/images/bs-logo-png (1).png" rel="icon" type="image/x-icon">
 </head>
 <body>
 
@@ -17,12 +20,52 @@
 
 <!-- particles.js container -->
 <div id="particles-js"></div>
-
+<center>
+<div class="container col-md-12">
+    <img src="assets/images/bs-logo-png (1).png" alt="" class="col-md-1">
+<form action="" class="col-md-6">
+   <label for="name">Name</label>
+    <input name="name" placeholder="Full Name" type="text" class="col-md-12" style="margin-bottom: 10px;" required>
+    <label for="phonenumber">Phone Number</label>
+    <input type="number" placeholder="Phone Number" name="phonenumber" class="col-md-12" style="margin-bottom: 10px;"  required>
+    <label for="email">Email</label>
+    <input type="email" placeholder="Email" name="email" class="col-md-12" style="margin-bottom: 10px;" required>
+    <label>Requested Class</label>
+    <select class="col-md-12" style="height: 35px;" required>
+      <option value="" class="col-md-12"></option>
+      <option value="1" class="col-md-12"></option>
+      <option value="2" class="col-md-12"></option>
+      <option value="3" class="col-md-12"></option>
+      <option value="4" class="col-md-12"></option>
+    </select>
+    <label>Requested School</label>
+    <select class="col-md-12" style="height: 35px;" required>
+      <option value="" class="col-md-12"></option>
+      <option value="1" class="col-md-12"></option>
+      <option value="2" class="col-md-12"></option>
+      <option value="3" class="col-md-12"></option>
+      <option value="4" class="col-md-12"></option>
+    </select>
+    <label for="children">Number of Children</label>
+    <input type="number" min="0" max="1000" class="col-md-12" name="children" placeholder="Number of Children" required>
+    <label for="country">Country</label>
+    <input type="text" name="country" placeholder="Country" class="col-md-12" required>
+    <label for="State">State</label>
+    <input type="text" name="State" placeholder="State" class="col-md-12" required>
+    <label for="Address">Country</label>
+    <input type="text" name="Address" placeholder="Address" class="col-md-12" required>
+    <label for="Information">Other Information</label>
+    <textarea name="Information" id="other" cols="51" rows="4" placeholder="Other Information"></textarea>
+    <button type="submit" class="col-md-3 submit btn-danger">Submit</button>
+</form>
+</div>
+</center>
 <!-- scripts -->
-<script src="../particles.js"></script>
+<script src="particles.js"></script>
 <script src="js/app.js"></script>
 
 <!-- stats.js -->
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="js/lib/stats.js"></script>
 <script>
   var count_particles, stats, update;
