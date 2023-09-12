@@ -149,18 +149,18 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <form action="" method="post">
+                        <form>
                         <div class="row" style="margin-bottom: 50px;">
-                            <input type="email" class="col-md-5" style="height:40px; margin-right: 20px;" placeholder="Email*">
+                            <input type="email" id="email" class="col-md-5" style="height:40px; margin-right: 20px;" placeholder="Email*">
 
-                            <input type="number" class="col-md-6" style="height:40px" placeholder="Phone*">
+                            <input type="number" id="phone" class="col-md-6" style="height:40px" placeholder="Phone*">
                         </div>
                         <div class="row" style="margin-bottom: 40px;">
-                            <input type="text" class="col-md-5" style="height:40px; margin-right: 20px;" placeholder="Name*">
+                            <input type="text" id="name" class="col-md-5" style="height:40px; margin-right: 20px;" placeholder="Name*">
 
-                            <input type="text" class="col-md-6" style="height:40px" placeholder="Subject*">
+                            <input type="text" id="message" class="col-md-6" style="height:40px" placeholder="Subject*">
                         </div>
-                        <input type="text" class="col-md-12" style="height:150px" placeholder="message*">
+                       <textarea name="text area" id="areaT" cols="30" rows="10" class="col-md-12" placeholder="Subject*"></textarea>
                         <div class="row" style="margin-top: 50px;">
                         <div class="g-recaptcha col-md-6" data-sitekey="6LeETxooAAAAAJxruO0rctD7AE_SYlO0ESpuYeSX" aria-required="true"></div>
                         <button type="submit" class="col-md-6">Submit</button>
@@ -187,9 +187,9 @@
   </div>
   <button class="C-boxes col-xs-1">INQUIRE</button>
   <button class="C-boxes col-xs-1">APPLY</button>
-  <button class="C-boxes col-xs-1">VISIT US</button>
+  <button class="C-boxes col-xs-1"> <a href="inquiry.html" style="text-decoration: none; color:white">VISIT US</a></button>
 </div>
-<div class="joinUs"  style="background-image: url('assets/images/sing.png'); height:600px; margin-bottom: 100px; margin-top: 600px; color:white; padding-top: 40px; background-size: cover; width: 100%;">
+<div class="joinUs"  style="background-image: url('assets/images/tennismain2.png'); height:600px; margin-bottom: 100px; margin-top: 600px; color:white; padding-top: 40px; background-size: cover; width: 100%;">
 <div class="container-fluid">
   <center>
   <div class="joinline col-md-3"></div>
@@ -261,5 +261,21 @@
     </div>
   </footer>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticmail.com",
+    Username : "batombaribakpo@gmail.com",
+    Password : "BE5863CEC8C1DEA4F121BD90AA35BBEFC8F2",
+    To : 'batombaribakpo@gmail.com.com',
+    From : "batombaribakpo@gmail.com",
+    Subject : "This",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
 </body>
 </html>
